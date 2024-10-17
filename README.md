@@ -10,6 +10,8 @@ By analyzing these categories, we can identify potential loyal customers and tai
 
 ## Table of Contents
 - [DataWareHouse_Design](#DataWareHouse_Design)
+- [ETL_Process](#ETL_Process)
+- [Azure](#Azure)
 - [Data Preparation](#data-preparation)
 - [Feature Selection](#feature-selection)
 - [Model Selection](#model-selection)
@@ -21,6 +23,13 @@ By analyzing these categories, we can identify potential loyal customers and tai
 ## DataWareHouse_Design
 This file contains the data warehouse schema design for a hotel booking system. The schema follows a **star schema** model, with fact tables and dimension tables that support efficient queries for booking, property operations, and revenue analysis.
 [Read More](Data_WareHouse_Design/ReadMe.md)
+
+## ETL_Process
+This project implements an ETL (Extract, Transform, Load) process that extracts data from various file sources, transforms it to fit the desired format, and loads it into a SQL Server database.
+[Read More](ETL_Process/ReadMe.md)
+## Azure
+This project leverages Azure Cloud Services for managing and processing data, integrating data flows into Azure Machine Learning for model building and analytics.
+[Read More](Azure/ReadMe.md)
 ## Data Preparation
 In this stage, we focused on ensuring the quality of our data:
 - Missing values in the `rating` column were replaced using the median to maintain the integrity of the dataset.
