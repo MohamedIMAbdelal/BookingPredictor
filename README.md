@@ -33,6 +33,7 @@ This project leverages Azure Cloud Services for managing and processing data, in
 ## Data Preparation
 In this stage, we focused on ensuring the quality of our data:
 - Missing values in the `rating` column were replaced using the median to maintain the integrity of the dataset.
+- 
 ![Data_Prepration](Azure/dataprepration.png)
 ## Feature Selection
 We selected specific features to build the model:
