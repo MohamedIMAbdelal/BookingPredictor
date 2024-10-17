@@ -71,7 +71,7 @@ To assess the model's performance, we utilized the following metrics:
 ![Metrics_Evaluation](Azure/AccuracyMetric.png)
 ## Usage
 To use the model:
-1. Clone this repository.
+- Clone this repository.
 
 
 ## Conclusion
