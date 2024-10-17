@@ -20,7 +20,7 @@ By analyzing these categories, we can identify potential loyal customers and tai
 - [License](#license)
 ## DataWareHouse_Design
 This file contains the data warehouse schema design for a hotel booking system. The schema follows a **star schema** model, with fact tables and dimension tables that support efficient queries for booking, property operations, and revenue analysis.
-
+[Read More](Data_WareHouse_Design/ReadMe.md)
 ## Data Preparation
 In this stage, we focused on ensuring the quality of our data:
 - Missing values in the `rating` column were replaced using the median to maintain the integrity of the dataset.
