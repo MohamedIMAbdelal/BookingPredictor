@@ -33,7 +33,7 @@ This project leverages Azure Cloud Services for managing and processing data, in
 ## Data Preparation
 In this stage, we focused on ensuring the quality of our data:
 - Missing values in the `rating` column were replaced using the median to maintain the integrity of the dataset.
-- 
+
 ![Data_Prepration](Azure/dataprepration.png)
 ## Feature Selection
 We selected specific features to build the model:
@@ -50,8 +50,10 @@ We selected specific features to build the model:
   - `revenue_generated`
   - `revenue_realized`
 
+![Feature_Selection](Azure/select.png)
 - The dataset was split into a training set (70%) and a test set (30%) to validate the model's performance.
 
+![Data_Split](Azure/split.png)
 ## Model Selection
 We utilized **Multiclass Logistic Regression** to classify customer behaviors into the three specified categories. This model was chosen for its effectiveness in handling multiclass classification tasks.
 
@@ -59,18 +61,18 @@ We utilized **Multiclass Logistic Regression** to classify customer behaviors in
 - The model was trained using the training dataset to learn patterns and relationships within the data.
 - The remaining 30% of the data was used for scoring to evaluate the model's predictive accuracy.
 
+![Train_Model](Azure/train.png)
 ## Evaluation Metrics
 To assess the model's performance, we utilized the following metrics:
 - **Overall Accuracy**: Measures the proportion of correct predictions.
 - **Micro Precision**: Averages precision across all instances, treating them equally.
 - **Macro Precision**: Averages precision for each class independently, providing insights into performance on minority classes.
 
+![Metrics_Evaluation](Azure/AccuracyMetric.png)
 ## Usage
 To use the model:
 1. Clone this repository.
-2. Install required libraries (if any).
-3. Load your dataset and preprocess it as described.
-4. Train the model and evaluate it using the provided metrics.
+
 
 ## Conclusion
 This project highlights the potential for predicting customer behaviors in the booking industry. By understanding customer patterns, businesses can enhance their marketing strategies and improve customer loyalty.
