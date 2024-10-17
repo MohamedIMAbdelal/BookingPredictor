@@ -9,6 +9,7 @@ This project aims to predict customer booking behaviors by classifying them into
 By analyzing these categories, we can identify potential loyal customers and tailor targeted marketing strategies accordingly.
 
 ## Table of Contents
+- [DataWareHouse_Design](#DataWareHouse_Design)
 - [Data Preparation](#data-preparation)
 - [Feature Selection](#feature-selection)
 - [Model Selection](#model-selection)
@@ -17,6 +18,8 @@ By analyzing these categories, we can identify potential loyal customers and tai
 - [Usage](#usage)
 - [Conclusion](#conclusion)
 - [License](#license)
+## DataWareHouse_Design
+This file contains the data warehouse schema design for a hotel booking system. The schema follows a **star schema** model, with fact tables and dimension tables that support efficient queries for booking, property operations, and revenue analysis.
 
 ## Data Preparation
 In this stage, we focused on ensuring the quality of our data:
