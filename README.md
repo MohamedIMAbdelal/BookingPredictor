@@ -22,10 +22,12 @@ By analyzing these categories, we can identify potential loyal customers and tai
 - [License](#license)
 ## DataWareHouse_Design
 This file contains the data warehouse schema design for a hotel booking system. The schema follows a **star schema** model, with fact tables and dimension tables that support efficient queries for booking, property operations, and revenue analysis.
+![DataWareHouse_Design_Diagram](Data_WareHouse_Design/Tables&Columns_Preview/DataWareHouseDiagram.jpeg)
 [Read More](Data_WareHouse_Design/ReadMe.md)
 
 ## ETL_Process
 This project implements an ETL (Extract, Transform, Load) process that extracts data from various file sources, transforms it to fit the desired format, and loads it into a SQL Server database.
+![ETL_Process](ETL_Process/ETL_Using_SSIS/ETL_Process.png)
 [Read More](ETL_Process/ReadMe.md)
 ## Azure
 This project leverages Azure Cloud Services for managing and processing data, integrating data flows into Azure Machine Learning for model building and analytics.
