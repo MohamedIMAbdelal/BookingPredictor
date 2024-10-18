@@ -33,7 +33,7 @@ This dashboard offers a comprehensive view of hotel operations, including revenu
 ## Power BI Data Warehouse Schema
 
 ### Data Model Overview
-![Data Warehouse Schema](PowerPi/PowerPi_DataWareHouse.jpeg)
+![Data Warehouse Schema](PowerPi_DataWareHouse.jpeg)
 
 The data model powering the dashboard consists of fact and dimension tables that store booking and room data. These tables enable the aggregation and calculation of KPIs used in the Power BI reports.
 
