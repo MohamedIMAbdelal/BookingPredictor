@@ -17,6 +17,7 @@ By analyzing these categories, we can identify potential loyal customers and tai
 - [Model Selection](#model-selection)
 - [Training and Scoring](#training-and-scoring)
 - [Evaluation Metrics](#evaluation-metrics)
+- [Power Pi](#Power_Pi)
 - [Usage](#usage)
 - [Conclusion](#conclusion)
 - [License](#license)
@@ -73,6 +74,10 @@ To assess the model's performance, we utilized the following metrics:
 - **Macro Precision**: Averages precision for each class independently, providing insights into performance on minority classes.
 
 ![Metrics_Evaluation](Azure/AccuracyMetric.png)
+## Power_Pi
+This project leverages Power BI to visualize and analyze hotel booking data. The dashboard provides key performance indicators (KPIs), enabling stakeholders to monitor and optimize hotel performance.
+[Read More](PowerPi/ReadMe.md)
+
 ## Usage
 To use the model:
 - Clone this repository.
