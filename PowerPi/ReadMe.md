@@ -1,44 +1,46 @@
-Power BI Integration for Hotel Data Analytics
-As part of our project, we used Power BI to visualize and analyze key performance indicators (KPIs) from our hotel booking data. Below are details of the Power BI interface and data warehouse schema that were implemented.
+Hotel Data Analytics - Power BI Dashboard
+This project leverages Power BI to visualize and analyze hotel booking data. The dashboard provides key performance indicators (KPIs), enabling stakeholders to monitor and optimize hotel performance.
 
-1. Power BI Dashboard Interface - Hotel Data Analytics
+Power BI Dashboard Interface
+Overview
 
-This dashboard offers a comprehensive view of hotel performance across various dimensions, including revenue, occupancy rates, and booking details.
+This dashboard offers a comprehensive view of hotel operations, including revenue, occupancy rates, and booking metrics. The filters and visuals allow users to drill down into data based on various dimensions such as room class, booking platform, and property.
 
-Filter Options:
-Users can dynamically filter data by city, room class, booking platform, room category, property name, and booking ID. This allows for granular analysis of specific data subsets.
+Key Metrics
+Revenue: Total revenue with week-over-week (WoW) change percentages.
+ADR (Average Daily Rate): Room revenue per day.
+RevPAR (Revenue per Available Room): Room revenue across available rooms.
+Occupancy%: Room occupancy as a percentage of total capacity.
+Realization%: Percentage of total available rooms that were booked.
+DURN (Duration): Average stay duration.
+Visualizations
+Filterable Metrics: Filter data by city, room class, platform, and property to gain targeted insights.
+Pie Chart: Displays room category distribution (Luxury vs Business).
+Line Graph: Tracks trends in RevPAR, ADR, and Occupancy%.
+Detailed Table: Provides metrics like Revenue, Occupancy%, and RevPAR for each property.
+Example Metrics and Insights:
+Occupancy WoW Change: Up 28.11%
+Realization WoW Change: Up 0.64%
+DURN WoW Change: Up 28.93%
+Power BI Data Warehouse Schema
+Data Model Overview
 
-Key Metrics:
+The data model powering the dashboard consists of fact and dimension tables that store booking and room data. These tables enable the aggregation and calculation of KPIs used in the Power BI reports.
 
-Revenue: Displays total revenue for a selected period along with week-over-week (WoW) change percentages.
-ADR (Average Daily Rate) and RevPAR (Revenue per Available Room): Highlight room revenue metrics and fluctuations over time.
-Occupancy%: Shows the percentage of occupied rooms, alongside Realization% (the percentage of total capacity realized) and DURN (Duration) representing the average length of stay.
-Visual indicators such as upward and downward arrows provide immediate insights into performance trends.
-Visuals:
+Fact and Dimension Tables
+Fact_BookingOperations: Contains booking operation details (e.g., booking dates, number of guests, stay duration).
+Fact_Bookings: Aggregates total bookings and property capacities.
+Dim_Date: Stores date attributes (Day_Type, WeekNum) for time-based filtering.
+Dim_Rooms: Contains room-related data (room_class, room_id).
+Dim_Hotels: Includes hotel property data (city, category, property_id).
+Calculated Measures
+We have defined multiple calculated measures for tracking business KPIs, including:
 
-Pie Chart: Visualizes the distribution of room categories (Luxury vs. Business) as a percentage of total bookings.
-Line Graph: Tracks RevPAR, ADR, and Occupancy% over time, helping identify patterns and trends over weeks.
-Tabular Data:
+ADR WoW change %
+Occupancy
+Revenue
+Cancellation%
+These measures support real-time analysis of the hotel performance metrics.
 
-A detailed table presents booking information by property, with metrics such as Revenue, Occupancy%, Realization%, and RevPAR. This breakdown enables a deep dive into individual property performance.
-Additional Insights:
-
-Data on cancellation rates, average ratings, and ADR broken down by Day Type (Weekday vs. Weekend) provide insights into how different factors influence hotel performance.
-2. Power BI Data Warehouse Schema
-
-The Power BI data model was built using the following tables and relationships to store and analyze hotel booking data:
-
-Fact Tables:
-
-Fact_BookingOperations: Contains detailed booking operations data, including booking date, check-in/check-out dates, number of guests, and stay duration.
-Fact_Bookings: Aggregates bookings data, capturing key metrics such as property ID, room category, and total bookings/capacity.
-Dimension Tables:
-
-Dim_Date: Stores time-related attributes like date, Day_Type (Weekday/Weekend), and WeekNum, facilitating time-based analysis.
-Dim_Rooms: Provides room-specific data, such as room_class and room_id, allowing segmentation of bookings by room type.
-Dim_Hotels: Holds hotel property data, including city, category, and property_id, for filtering and grouping data by property or location.
-Calculated Measures: A list of calculated measures (e.g., ADR WoW change %, Occupancy, Revenue, Cancellation%) were created to track KPIs and trends. These measures were essential for analyzing hotel performance metrics in real time and supporting data-driven decision-making.
-
-These Power BI reports and dashboards provide detailed, interactive insights into hotel performance, helping stakeholders optimize operations, monitor revenue, and improve guest experience. Through seamless integration with our data warehouse and using calculated measures, the dashboard ensures accurate, real-time analysis of business KPIs.
-
-
+Power BI Integration for Data Analytics
+The Power BI dashboard is a crucial tool for analyzing hotel performance. It integrates with our data warehouse, enabling us to calculate and visualize metrics such as revenue, occupancy, cancellations, and more.
