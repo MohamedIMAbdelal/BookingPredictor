@@ -5,7 +5,7 @@ This project leverages **Power BI** to visualize and analyze hotel booking data.
 ## Power BI Dashboard Interface
 
 ### Overview
-![Dashboard Overview](./images/PowerPi_Interface.jpeg)
+![Dashboard Overview](PowerPi/PowerPi_Interface.jpeg)
 
 This dashboard offers a comprehensive view of hotel operations, including revenue, occupancy rates, and booking metrics. The filters and visuals allow users to drill down into data based on various dimensions such as room class, booking platform, and property.
 
@@ -33,7 +33,7 @@ This dashboard offers a comprehensive view of hotel operations, including revenu
 ## Power BI Data Warehouse Schema
 
 ### Data Model Overview
-![Data Warehouse Schema](./images/PowerPi_DataWareHouse.jpeg)
+![Data Warehouse Schema](PowerPi/PowerPi_DataWareHouse.jpeg)
 
 The data model powering the dashboard consists of fact and dimension tables that store booking and room data. These tables enable the aggregation and calculation of KPIs used in the Power BI reports.
 
